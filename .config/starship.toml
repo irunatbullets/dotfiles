@@ -19,7 +19,7 @@ $character
 #format = "[\\[$symbol$env_value\\] ]($style)"
 #style = "bold white"
 
-[env_var.CONTAINER_ID_PROMPT]
+[env_var.CONTAINER_PROMPT]
 format = "$env_value"
 
 

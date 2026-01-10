@@ -29,23 +29,6 @@ if [[ -d "$HOME/.bashrc.d" ]]; then
     done
 fi
 
-# Container prompt (icon + color)
-
-RED=$'\e[1;31m'
-YELLOW=$'\e[1;33m'
-RESET=$'\e[0m'
-
-if [[ -n "$CONTAINER_ID" ]]; then
-    case "$CONTAINER_ID" in
-        debian)
-            export CONTAINER_PROMPT="${RED} debian${RESET}"
-            ;;
-        *)
-            export CONTAINER_PROMPT="${YELLOW}📦 ${CONTAINER_ID}${RESET}"
-            ;;
-    esac
-fi
-
 # Initialize Starship prompt
 eval "$(starship init bash)"
 
