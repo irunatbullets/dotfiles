@@ -15,9 +15,9 @@ $character
 """
 
 [env_var.CONTAINER_ID]
-symbol = "📦 "
-format = "[$symbol]($style)"
-style = "bold yellow"
+symbol = "📦"
+format = "[\\[$symbol$env_value\\] ]($style)"
+style = "bold white"
 
 # ===== User / host =====
 [username]
