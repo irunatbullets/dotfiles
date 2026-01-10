@@ -4,6 +4,7 @@ add_newline = false
 
 # ===== Prompt layout =====
 format = """
+$env_var\
 $username\
 $hostname\
 :\
@@ -12,6 +13,11 @@ $git_branch\
 $git_status\
 $character
 """
+
+[env_var.CONTAINER_ID]
+symbol = "📦 "
+format = "[$symbol]($style)"
+style = "bold yellow"
 
 # ===== User / host =====
 [username]
