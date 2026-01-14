@@ -32,3 +32,7 @@ if [[ -d "$DOTFILES_DIR/.bashrc.d" ]]; then
     done
 fi
 
+echo ""
+echo "Make sure to recreate any distroboxes with `/home/linuxbrew/.linuxbrew` mounted as a volume."
+echo ""
+
