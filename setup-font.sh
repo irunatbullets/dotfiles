@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
 FONT_CASK="font-caskaydia-cove-nerd-font"
 FONT_DISPLAY_NAME="Caskaydia Cove Nerd Font"
