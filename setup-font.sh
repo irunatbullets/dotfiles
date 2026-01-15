@@ -28,11 +28,11 @@ cat <<EOF
 🧾 Manual font setup
 
 Terminal (Ptyxis / GNOME Terminal):
-Preferences → Font → "$FONT_DISPLAY_NAME"
+Appearance → Font → "$FONT_DISPLAY_NAME"
 
 VSCodium:
-Settings → Font Family
-CaskaydiaCove Nerd Font, monospace
+vscodium://settings/editor.fontFamily
+'CaskaydiaCove Nerd Font', monospace
 
 EOF
 
