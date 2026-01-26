@@ -11,7 +11,7 @@ git config --global alias.remove-deleted-branches \
 '!f() { current=$(git symbolic-ref --short HEAD); git fetch --prune; git branch -vv | grep ": gone]" | awk "{print \$1}" | grep -v "^$current$" | grep -v "^main$" | xargs -r git branch -D; }; f'
 
 git config --global user.name "irunatbullets"
-git config --global user.email "murray.nuttall@gmail.com"
+git config --global user.email "murray@ik.me"
 
 git config --global core.editor vim
 git config --global advice.skippedCherryPicks false
