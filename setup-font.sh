@@ -34,5 +34,11 @@ VSCodium:
 vscodium://settings/editor.fontFamily
 'CaskaydiaCove Nerd Font', monospace
 
+If you have UI font issues with VSCodium installed via brew:
+mkdir -p ~/.fonts
+wget -O ~/.fonts/NotoSans-Regular.ttf https://github.com/google/fonts/raw/main/ofl/notosans/NotoSans%5Bwdth%2Cwght%5D.ttf
+fc-cache -fv
+
+
 EOF
 
