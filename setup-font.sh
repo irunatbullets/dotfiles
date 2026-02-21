@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-FONT_CASK="font-caskaydia-cove-nerd-font"
-FONT_DISPLAY_NAME="Caskaydia Cove Nerd Font"
+FONT_CASK="font-adwaita-mono-nerd-font"
+FONT_DISPLAY_NAME="Adwaita Mono Nerd Font"
 
 # Check brew
 if ! command -v brew >/dev/null 2>&1; then
@@ -32,7 +32,7 @@ Appearance → Font → "$FONT_DISPLAY_NAME"
 
 VSCodium:
 vscodium://settings/editor.fontFamily
-'CaskaydiaCove Nerd Font', monospace
+'$FONT_DISPLAY_NAME', monospace
 
 If you have UI font issues with VSCodium installed via brew:
 mkdir -p ~/.fonts
