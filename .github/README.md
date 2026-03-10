@@ -1,3 +1,11 @@
+I have to remember to install
+
+```
+sudo apt install sway firefox-esr xwayland
+
+```
+
+
 To set this up on a fresh machine:
 
 `rm -fr ~/.bash*`
