@@ -1,0 +1,17 @@
+[alias]
+	status = stat
+	stat = status
+	ci = commit
+	co = checkout
+	remove-deleted-branches = "!f() { current=$(git symbolic-ref --short HEAD); git fetch --prune; git branch -vv | grep \": gone]\" | awk \"{print \\$1}\" | grep -v \"^$current$\" | grep -v \"^main$\" | xargs -r git branch -D; }; f"
+[user]
+	email = murray@ik.me
+	name = irunatbullets
+[core]
+	editor = vim
+[advice]
+	skippedCherryPicks = false
+[fetch]
+	prune = true
+[init]
+	defaultBranch = main
