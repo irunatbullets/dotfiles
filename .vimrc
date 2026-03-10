@@ -11,14 +11,16 @@ set smartindent
 set number
 set relativenumber
 
-set termguicolors
-
 call plug#begin('~/.vim/plugged')
 Plug 'ghifarit53/tokyonight-vim'
 call plug#end()
 
-colorscheme tokyonight
-
-" Tokyo Night tweaks for comments and line numbers
-highlight Comment ctermfg=DarkGrey guifg=#565f89
-highlight LineNr guifg=#565f89
+if &term ==# 'linux'
+  colorscheme default
+else
+  set termguicolors
+  colorscheme tokyonight
+  " Tokyo Night tweaks for comments and line numbers
+  highlight Comment ctermfg=DarkGrey guifg=#565f89
+  highlight LineNr guifg=#565f89
+endif
