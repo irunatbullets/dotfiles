@@ -6,6 +6,7 @@ To set this up on a fresh machine:
 git clone --bare git@github.com:irunatbullets/dotfiles.git ~/.dotfiles
 alias dotfiles='git --git-dir=$HOME/.dotfiles' --work-tree=$HOME'
 dotfiles checkout
+dotfiles push --set-upstream origin main
 ```
 
 IMPORTANT: Relog to make sure you're using the new dotfiles.
