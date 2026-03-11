@@ -11,6 +11,7 @@
 	editor = vim
 [advice]
 	skippedCherryPicks = false
+	detachedHead = false
 [fetch]
 	prune = true
 [init]
