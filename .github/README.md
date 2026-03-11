@@ -1,7 +1,7 @@
 I have to remember to install
 
 ```
-sudo apt install sway firefox-esr xwayland
+sudo apt install sway autotiling firefox-esr xwayland fuzzel vim unzip
 
 ```
 
