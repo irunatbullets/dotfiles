@@ -5,34 +5,34 @@ sudo apt install sway autotiling firefox-esr xwayland fuzzel vim unzip
 
 ```
 
-
-To set this up on a fresh machine:
+To set this up on a freshly installed  machine:
 
 `rm -fr ~/.bash*`
 
 ```bash
 git clone --bare git@github.com:irunatbullets/dotfiles.git ~/.dotfiles
-alias dotfiles='git --git-dir=$HOME/.dotfiles' --work-tree=$HOME'
-dotfiles checkout
-dotfiles push --set-upstream origin main
+alias dot='git --git-dir=$HOME/.dotfiles' --work-tree=$HOME'
+dot checkout
+dot push --set-upstream origin main
 ```
 
 IMPORTANT: Relog to make sure you're using the new dotfiles.
 
-Add something new explicitly
+It is better to add files explicitly rather than lazily adding the whole folder. You could end up with a bunch of useless stuff you didn't really want!
 
 ```
-dotfiles add path/to/file.ext
+dot add path/to/file.ext
 
 ```
 
-When commiting
+When commiting, I have been using this workflow.
 
 ```
-dotfiles status
-dotfiles add -u
-dotfiles commit -m "comment"
-dotfiles push
+dot status
+dot add -u
+dot status
+dot commit -m "comment"
+dot push
 
 ```
 
