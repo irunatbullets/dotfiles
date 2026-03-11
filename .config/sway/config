@@ -207,6 +207,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
 #
 # Utilities:
 #
@@ -237,9 +238,10 @@ bar {
     colors {
         statusline #c0caf5
         background #1a1b26
-	      focused_workspace  #1a1b26 #c0caf5 #1a1b26
+        focused_workspace  #1a1b26 #c0caf5 #1a1b26
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
 
 include /etc/sway/config.d/*
+
