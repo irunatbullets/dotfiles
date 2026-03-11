@@ -1,4 +1,24 @@
+# ==============================================================================
+# Sway configuration
+# ==============================================================================
+
 exec_always autotiling
-include ~/.config/sway/config.d/*
+
+# Control load order here, rather than using 10-name.conf, so I don't need to
+# remember the the name of the file + and prefixed number.
+include ~/.config/sway/config.d/vars.conf
+include ~/.config/sway/config.d/style.conf
+include ~/.config/sway/config.d/apps.conf
+include ~/.config/sway/config.d/wallpaper.conf
+include ~/.config/sway/config.d/input.conf
+include ~/.config/sway/config.d/bindings.conf
+include ~/.config/sway/config.d/workspaces.conf
+include ~/.config/sway/config.d/layout.conf
+include ~/.config/sway/config.d/scratchpad.conf
+include ~/.config/sway/config.d/resize.conf
+include ~/.config/sway/config.d/utilities.conf
+include ~/.config/sway/config.d/bar.conf
+
+# Load system configs
 include /etc/sway/config.d/*
 
