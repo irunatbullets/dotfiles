@@ -36,5 +36,24 @@ dot push
 
 ```
 
+# Raspberry pi note:
+
+In `/boot/firmware/config.txt` add:
+
+```
+usbcore.autosuspend=-1
+hdmi_force_hotplug=1
+gpu_mem=256
+```
+
+and in `/boot/firmward/cmdline.txt` add
+
+```
+video=HDMI-A-1:1920x1080@60
+
+```
+
+
 Heavily borrowed from https://github.com/andersix/dotfiles/tree/main
+
 
