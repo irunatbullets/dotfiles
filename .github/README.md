@@ -11,7 +11,7 @@ To set this up on a freshly installed  machine:
 
 ```bash
 git clone --bare git@github.com:irunatbullets/dotfiles.git ~/.dotfiles
-alias dot='git --git-dir=$HOME/.dotfiles' --work-tree=$HOME'
+alias dot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 dot checkout
 dot push --set-upstream origin main
 ```
