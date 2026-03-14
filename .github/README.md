@@ -36,6 +36,24 @@ dot push
 
 ```
 
+# Niri
+
+Okay, for Debian do:
+
+```
+echo "deb http://download.opensuse.org/repositories/home:/AvengeMedia:/danklinux/Debian_13/ /" | sudo tee /etc/apt/sources.list.d/danklinux.list
+
+curl -fsSL https://download.opensuse.org/repositories/home:AvengeMedia:danklinux/Debian_13/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_AvengeMedia_danklinux.gpg > /dev/null
+```
+followed by:
+
+```
+sudo apt update
+sudo apt install niri
+
+```
+Enjoy!
+
 # Raspberry pi note:
 
 In `/boot/firmware/config.txt` add:
