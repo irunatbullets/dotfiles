@@ -49,7 +49,8 @@ followed by:
 
 ```
 sudo apt update
-sudo apt install niri
+sudo apt install --no-install-recommends niri
+
 
 ```
 Enjoy!
