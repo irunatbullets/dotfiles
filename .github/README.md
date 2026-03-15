@@ -55,6 +55,33 @@ sudo apt install --no-install-recommends niri
 ```
 Enjoy!
 
+# Flatpaks/bazaar!
+
+Ensure we have xdg-desktop-portal-gtk stuff, install flatpak, add the flathub repository, and!
+
+```
+sudo apt install --no-install-recommends xdg-desktop-portal xdg-desktop-portal-gtk
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
+
+Relog/or reboot, even if you think it's all good, just do it. Then you should be able to:
+
+```
+flatpak install flathub io.github.kolunmi.Bazaar
+
+```
+
+Bazaar _should_ now be available in fuzzel, but if not you can run it with the follow command **ATTENTION: This first load is will take minutes (especially on raspberry pi)**:
+
+```
+flatpak install flathub io.github.kolunmi.Bazaar
+
+```
+
+You should now be able to install things and have them show up in fuzzel, if they're still not showing up make sure to logout completely and then back in!
+
+
 # Raspberry pi note:
 
 In `/boot/firmware/config.txt` add:
