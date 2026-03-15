@@ -112,7 +112,6 @@ input {
 layout {
     // Set gaps around windows in logical pixels.
     gaps 16
-
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
     //   or right edge of the screen.
@@ -258,7 +257,7 @@ layout {
         // left 64
         // right 64
         // top 64
-        // bottom 64
+        top 10
     }
 
     tab-indicator {

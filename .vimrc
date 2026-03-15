@@ -29,9 +29,9 @@ set autoindent                " Copy indent from current line when starting a ne
 set expandtab                 " Use spaces instead of tabs
 set smarttab                  " Be smart when using tabs
 set smartindent               " Whatever this is ...
-set shiftwidth=2              " Number of spaces to use for each step of (auto)indent
-set softtabstop=2             " Number of spaces that a <Tab> counts for while editing
-set tabstop=2                 " Number of spaces that a <Tab> in the file counts for
+set shiftwidth=4              " Number of spaces to use for each step of (auto)indent
+set softtabstop=4             " Number of spaces that a <Tab> counts for while editing
+set tabstop=4                 " Number of spaces that a <Tab> in the file counts for
 
 " UI Configuration
 set cursorline                " Highlight the current line

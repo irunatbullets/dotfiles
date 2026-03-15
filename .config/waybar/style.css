@@ -1,0 +1,74 @@
+#waybar {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+#window {
+    padding: 0;
+}
+
+window#waybar {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    transition-duration: 0s;
+    background-color: transparent;
+    color: #15161e;
+}
+
+.modules-left {
+    margin-left: 16px;
+}
+
+.modules-right {
+    margin-right: 16px;
+}
+
+#workspaces {
+    margin: 0;
+}
+
+#workspaces button {
+    padding: 0 4px;
+    color: #15161e;
+    border: 0;
+    border-radius: 0;
+}
+
+#workspaces button.visible {
+    color: #a9b1d6;
+}
+
+#workspaces button.focused {
+    background-color: transparent;
+    color: #15161e;
+    font-weight: 900;
+}
+
+#workspaces button.urgent {
+    background-color: transparent;
+    color: #a96d1f;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    background: #a9b1b6;
+    color: #15161e;
+    text-shadow: none;
+}
+
+#workspaces button.focused {
+    color: #15161e;
+}
+#workspaces button.focused:hover {
+    background-color: transparent;
+}
+
+#tray,
+#network,
+#idle_inhibitor {
+    margin: 0px 10px;
+    padding: 0 5px;
+}
+
