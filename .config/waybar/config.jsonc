@@ -1,9 +1,9 @@
 // -*- mode: jsonc -*-
 {
+    "position": "top",
     "layer": "top",
-    "position": "top", // Waybar position (top|bottom|left|right)
     "exclusive": false,
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 4,
     "modules-left": [
         "niri/workspaces",
         "niri/window",
@@ -11,8 +11,8 @@
     "modules-center": [],
     "modules-right": [
         // "idle_inhibitor",
+        "tray",
         "network",
-        // "tray",
         "clock"
     ],
     "idle_inhibitor": {
